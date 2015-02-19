@@ -39,16 +39,17 @@ h1 span{
 }
 header{
 	margin: 160px auto;
-	outline: 1px gray dashed;
+	transform: translate(100px);
 }
 header .wrap{
+	transition: transform .5s ease;
 	
 }
 header .wrap:hover{
 	transition-property: transform, margin-left;
 	transition-duration: .5s;
 	transition-timing-function: ease;
-	transform: translate(100px);
+	transform: translate(-100px);
 }
 header .wrap{
 	/*outline: 3px green dashed;
