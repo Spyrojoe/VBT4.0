@@ -8,15 +8,37 @@
 </head>
 <body>
 	<div id="attention">WORK IN PROGRESS</div>
-
+	<div class="button-group">
+		<button id="floaty">floaty</button>
+		<button id="fadey">fadey</button>
+		<button id="breaky">breaky</button>
+		<button id="all">all</button>
+	</div>
 <header>
-  <div class="wrap">
-    <div class="greet">
-      <h1><span class="small-talk">Hi, I'm</span> <span class="name">Brad Brock.</span> <span class="small-talk">A web developer and designer* in Dallas.</span></h1>
-      <div class="asterisk small-talk">*in that order</div>
-    </div>
-  </div>
+
+	<div class="wrap">
+		<div class="greet">
+			<h1><span class="small-talk">Hi, I'm</span> <span class="name">Brad Brock.</span> <span class="small-talk">A web developer and designer* in Dallas.</span></h1>
+			<div class="asterisk small-talk">*in that order</div>
+		</div>
+	</div>
 </header>
-<!--<button>hover me</button>-->
+<script type="text/javascript">
+	$("#floaty").click(function(){
+		$(".greet").toggleClass("floaty");
+	});
+	$("#fadey").click(function(){
+		$(".small-talk").toggleClass("fadey");
+	});
+	$("#breaky").click(function(){
+		$(".name").toggleClass("breaky");
+	});
+	$("#all").click(function(){
+		$(".greet").toggleClass("floaty");
+		$(".small-talk").toggleClass("fadey");
+		$(".name").toggleClass("breaky");
+	});
+
+</script>
 </body>
 </html>

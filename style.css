@@ -15,8 +15,16 @@ button{
 	height: 40px;
 	border-radius: 4px;
 	font-size: 1.1em;
-	position: absolute;
-	top: 100px;
+	outline: none;
+}
+button:active{
+	background-color: #e6e6e6;
+}
+.button-group{
+	display: block;
+	width: 100%;
+	margin: 48px auto 0;
+	text-align: center;
 }
 #attention{
 	padding: 8px 0;
@@ -33,25 +41,21 @@ button{
 .greet{
 	margin: inherit;
 	font-size: .8em;
+
 	-webkit-transition: transform .5s ease;
 	transition: transform .5s ease;
 	-webkit-transform: translate(100px);
 	transform: translate(100px);
 }
 .greet:hover{
-	-webkit-transition: transform .5s ease;
-	transition: transform .5s ease;
-	-webkit-transform: translate(0);
-	transform: translate(0);
+	
 }
 .greet:hover .small-talk{
-	-webkit-transition: opacity 1s ease;
-	transition: opacity 1s ease;
-	opacity: 0;
+	
 }
 .greet:hover .name{
-	-webkit-animation: shrink-wrap .1s linear forwards;
-	animation: shrink-wrap .1s linear forwards;
+	/*-webkit-animation: shrink-wrap .1s linear forwards;
+	animation: shrink-wrap .1s linear forwards;*/
 }
 .greet .name{
 	display: block;
@@ -62,7 +66,22 @@ button{
 	-webkit-transition: visibility 1s, opacity 1s;
 	transition: visibility 1s, opacity 1s;
 	/*visibility: hidden;*/
-	opacity: 1;
+	
+}
+.floaty{
+	-webkit-transition: transform .5s ease;
+	transition: transform .5s ease;
+	-webkit-transform: translate(0);
+	transform: translate(0);
+}
+.fadey{
+	-webkit-transition: opacity 1s ease;
+	transition: opacity 1s ease;
+	opacity: 0;
+}
+.breaky{
+	-webkit-animation: shrink-wrap .1s linear forwards;
+	animation: shrink-wrap .1s linear forwards;
 }
 header{
 	margin: 160px auto;
