@@ -1,0 +1,56 @@
+html{
+	box-sizing: border-box;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, img, ol, ul, li, article, footer, header, nav{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+ol, ul{
+	list-style: none;
+}
+.clfx:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.wrap{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 900px;
+}
+header{
+	padding: 4% 0;
+	margin: 10% 0;
+	font-size: 2em;
+	font-weight: 700;
+	background-image: url("img/ribbon.png");
+	background-position: 0 158%;
+	background-repeat: repeat-x;
+}
+header h1{
+	width: 55%;
+	font-size: 1em;
+}
+header span{
+	display: block;
+	line-height: 1.3em;
+	font-size: 2em;
+}
+.asterisk{
+	line-height: 1.8em;
+	font-style: italic;
+	font-size: .6em;
+}
+.tools{
+	
+}
+.tools h2, .tools p{
+}
