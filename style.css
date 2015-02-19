@@ -31,25 +31,53 @@ button{
 	margin: 0 auto; 
 }
 .greet{
-
+	margin: inherit;
+	font-size: .8em;
+	-webkit-transition: transform .5s ease;
+	transition: transform .5s ease;
+	-webkit-transform: translate(100px);
+	transform: translate(100px);
 }
-h1 span{
+.greet:hover{
+	-webkit-transition: transform .5s ease;
+	transition: transform .5s ease;
+	-webkit-transform: translate(0);
+	transform: translate(0);
+}
+.greet:hover .small-talk{
+	-webkit-transition: opacity 1s ease;
+	transition: opacity 1s ease;
+	opacity: 0;
+}
+.greet:hover .name{
+	-webkit-animation: shrink-wrap .1s linear forwards;
+	animation: shrink-wrap .1s linear forwards;
+}
+.greet .name{
 	display: block;
-	font-size: 2em;
+	/*font-size: 2em;*/
+	font-size: 2.4em;
+}
+.greet .small-talk{
+	-webkit-transition: visibility 1s, opacity 1s;
+	transition: visibility 1s, opacity 1s;
+	/*visibility: hidden;*/
+	opacity: 1;
 }
 header{
 	margin: 160px auto;
-	transform: translate(100px);
 }
 header .wrap{
-	transition: transform .5s ease;
-	
+	margin: 0 auto 0 0;
+
+	/*transition: transform .5s ease;
+	transform: translate(100px);*/
 }
 header .wrap:hover{
-	transition-property: transform, margin-left;
+	/*transition-property: transform;
 	transition-duration: .5s;
 	transition-timing-function: ease;
-	transform: translate(-100px);
+	transform: translate(0px);*/
 }
 header .wrap{
 	/*outline: 3px green dashed;
@@ -58,4 +86,20 @@ header .wrap{
 .asterisk{
 	margin-top: 72px;
 	font-style: italic;
+}
+@-webkit-keyframes shrink-wrap{
+	from{
+		width: 100%;
+	}
+	to{
+		width: 20%;
+	}
+}
+@keyframes shrink-wrap{
+	from{
+		width: 100%;
+	}
+	to{
+		width: 20%;
+	}
 }
