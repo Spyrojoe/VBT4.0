@@ -21,24 +21,40 @@
 			<h1><span class="small-talk">Hi, I'm</span> <span class="name">Brad Brock.</span> <span class="small-talk">A web developer and designer* in Dallas.</span></h1>
 			<div class="asterisk small-talk">*in that order</div>
 		</div>
+		<!--<nav>
+			<ul>
+				<li><a href="#">What I Do</a></li>
+				<li><a href="#">What I've Done</a></li>
+				<li><a href="#">Where I'm At</a></li>
+			</ul>
+		</nav>-->
 	</div>
 </header>
 <script type="text/javascript">
-	$("#floaty").click(function(){
-		$(".greet").toggleClass("floaty");
-	});
-	$("#fadey").click(function(){
-		$(".small-talk").toggleClass("fadey");
-	});
-	$("#breaky").click(function(){
-		$(".name").toggleClass("breaky");
-	});
-	$("#all").click(function(){
-		$(".greet").toggleClass("floaty");
-		$(".small-talk").toggleClass("fadey");
-		$(".name").toggleClass("breaky");
-	});
+	$(document).ready(function(){
+		$(".greet").addClass("floaty");
+		$(".small-talk").addClass("fadey");
+		$(".name").addClass("breaky");
+		$("header").addClass("expandy");
+		$("nav").addClass("hide");
 
+		$("#floaty").click(function(){
+			$(".greet").toggleClass("floaty");
+		});
+		$("#fadey").click(function(){
+			$(".small-talk").toggleClass("fadey");
+		});
+		$("#breaky").click(function(){
+			$(".name").toggleClass("breaky");
+		});
+		$("#all").click(function(){
+			$(".greet").toggleClass("floaty");
+			$(".small-talk").toggleClass("fadey");
+			$(".name").toggleClass("breaky");
+			$("header").toggleClass("expandy shrinky");
+			$("nav").toggleClass("hide");
+		});
+	});
 </script>
 </body>
 </html>
