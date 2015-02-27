@@ -27,13 +27,20 @@ ol, ul{
 	max-width: 900px;
 }
 header{
-	padding: 4% 0;
-	margin: 10% 0;
+	margin: 0 0 10%;
 	font-size: 2em;
 	font-weight: 700;
-	background-image: url("img/ribbon.png");
 	background-position: 0 158%;
 	background-repeat: repeat-x;
+	outline: 2px red dashed;
+}
+main{
+	outline: 2px purple dashed;
+}
+header, main{
+	width: 50%;
+	float: left;
+	padding: 4% 0;
 }
 header h1{
 	width: 55%;
@@ -49,6 +56,7 @@ header span{
 	font-style: italic;
 	font-size: .6em;
 }
+
 .tools{
 	
 }
