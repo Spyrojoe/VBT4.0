@@ -26,47 +26,58 @@ ol, ul{
 	width: 100%;
 }
 .flex{
-	display: flex;
+	
 	/*flex-direction: column;*/
 }
 header{
-	order: 1;
+	width: 30%;
 	font-size: 2em;
 	font-weight: 700;
 	background: rgba(0,0,0,.3);
-	outline: 2px red dashed;
 }
 main{
-	order: 2;
+	width: 70%;
 	background: rgba(0,0,0,.4);
-	outline: 2px purple dashed;
 }
 header, main{
-	
 	float: left;
 	padding: 4% 1%;
 }
 header h1{
-	font-size: 1em;
+	margin-bottom: 6%;
+	font-size: 1.8em;
+	line-height: 1em;
+}
+header h2{
+	margin-bottom: 45%;
+	font-size: .7em;
 }
 header span{
 	display: block;
-	line-height: 1.3em;
-	font-size: 2em;
+	line-height: .9em;
+}
+.col{
+	height: 100vh;
 }
 
 nav{
+	/*padding: 0 20%;*/
 	text-align: center;
-	outline: 1px gray dotted;
+}
+nav ul{
+	width: 60%;
+	margin: 0 auto;
+	font-size: .8em;
 }
 nav li{
+	padding: 10% 0;
 	border-bottom: 1px black solid;
 }
 nav li:last-of-type{
 	border-bottom: 0;
 }
 nav a{
-	<display: block;
+	display: block;
 	text-decoration: none;
 	color: black;
 }
@@ -78,7 +89,13 @@ nav a{
 }
 
 .tools{
-	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	-webkit-align-items: center;
+	width: 80%;
+	margin: 0 auto;
 }
 .tools h2, .tools p{
 }
