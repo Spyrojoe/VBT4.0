@@ -54,6 +54,23 @@ header span{
 	line-height: 1.3em;
 	font-size: 2em;
 }
+
+nav{
+	text-align: center;
+	outline: 1px gray dotted;
+}
+nav li{
+	border-bottom: 1px black solid;
+}
+nav li:last-of-type{
+	border-bottom: 0;
+}
+nav a{
+	<display: block;
+	text-decoration: none;
+	color: black;
+}
+
 .asterisk{
 	line-height: 1.8em;
 	font-style: italic;
