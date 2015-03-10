@@ -1,4 +1,4 @@
-html{
+-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;html{
 	box-sizing: border-box;
 }
 *, *:before, *:after{
@@ -30,17 +30,58 @@ ol, ul{
 	/*flex-direction: column;*/
 }
 header{
-	width: 30%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
 	font-size: 2em;
 	font-weight: 700;
 	background: rgba(0,0,0,.3);
 }
+.flex{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	height: 100vh;
+}
 main{
-	width: 70%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-flex: 2;
+	-webkit-flex-grow: 2;
+	    -ms-flex-positive: 2;
+	        flex-grow: 2;
 	background: rgba(0,0,0,.4);
 }
 header, main{
-	float: left;
 	padding: 4% 1%;
 }
 header h1{
@@ -49,19 +90,13 @@ header h1{
 	line-height: 1em;
 }
 header h2{
-	margin-bottom: 45%;
 	font-size: .7em;
 }
 header span{
 	display: block;
 	line-height: .9em;
 }
-.col{
-	height: 100vh;
-}
-
 nav{
-	/*padding: 0 20%;*/
 	text-align: center;
 }
 nav ul{
@@ -89,12 +124,22 @@ nav a{
 }
 
 .tools{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	-webkit-align-items: center;
-	width: 80%;
 	margin: 0 auto;
 }
 .tools h2, .tools p{
