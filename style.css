@@ -1,8 +1,5 @@
--webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;html{
+*{
 	box-sizing: border-box;
-}
-*, *:before, *:after{
-	box-sizing: inherit;
 }
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, img, ol, ul, li, article, footer, header, nav{
 	margin: 0;
@@ -139,6 +136,28 @@ ul{
 }
 
 
+@media screen and (max-width: 800px){
+	body{
+		font-size: .8em;
+	}
+}
+
+
+@media screen and (max-width: 600px){
+	header, main, .flex-wrap{
+		display: block;
+	}
+	header{
+		display: table;
+		content: "";
+		clear: both;
+		width: 100%;
+	}
+	.intro, nav{
+		float: left;
+		width: 50%;
+	}
+}
 
 
 
