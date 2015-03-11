@@ -25,10 +25,6 @@ ol, ul{
 	margin: 0 auto;
 	width: 100%;
 }
-.flex{
-	
-	/*flex-direction: column;*/
-}
 header{
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -46,7 +42,7 @@ header{
 	font-weight: 700;
 	background: rgba(0,0,0,.3);
 }
-.flex{
+.flex-wrap{
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -54,11 +50,13 @@ header{
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	height: 100vh;
+
 }
 header, main{
-	padding: 4% 1%;
+	padding: 4%;
 }
 main{
 	display: -webkit-box;
@@ -70,13 +68,13 @@ main{
 	-webkit-flex-direction: column;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	-webkit-justify-content: space-around;
+	/*-webkit-justify-content: space-around;
 	    -ms-flex-pack: distribute;
 	        justify-content: space-around;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
-	        align-items: center;
+	        align-items: center;*/
 	-webkit-box-flex: 2;
 	-webkit-flex-grow: 2;
 	    -ms-flex-positive: 2;
@@ -98,6 +96,10 @@ section h2{
 header span{
 	display: block;
 	line-height: .9em;
+}
+.intro p{
+	display: inline-block;
+	max-width: 340px;
 }
 nav{
 	text-align: center;
@@ -125,26 +127,46 @@ nav a{
 	font-style: italic;
 	font-size: .6em;
 }
-
-.tools{
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-justify-content: space-around;
-	    -ms-flex-pack: distribute;
-	        justify-content: space-around;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-align-items: center;
-	margin: 0 auto;
-}
 ul{
 	margin-left: 24px;
 }
+
+
+.skillset{
+	display: inline-block;
+	outline: 2px green solid;
+	vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
