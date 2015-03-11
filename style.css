@@ -56,7 +56,9 @@ header{
 	-webkit-flex-direction: row;
 	    -ms-flex-direction: row;
 	        flex-direction: row;
-	height: 100vh;
+}
+header, main{
+	padding: 4% 1%;
 }
 main{
 	display: -webkit-box;
@@ -81,16 +83,17 @@ main{
 	        flex-grow: 2;
 	background: rgba(0,0,0,.4);
 }
-header, main{
-	padding: 4% 1%;
-}
+
 header h1{
 	margin-bottom: 6%;
 	font-size: 1.8em;
 	line-height: 1em;
 }
-h2{
-	font-size: 3em;
+section{
+	font-size: 1.2em;
+}
+section h2{
+	font-size: 2em;
 }
 header span{
 	display: block;
@@ -142,5 +145,6 @@ nav a{
 	-webkit-align-items: center;
 	margin: 0 auto;
 }
-.tools h2, .tools p{
+ul{
+	margin-left: 24px;
 }
