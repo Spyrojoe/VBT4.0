@@ -89,8 +89,8 @@ header h1{
 	font-size: 1.8em;
 	line-height: 1em;
 }
-header h2{
-	font-size: .7em;
+h2{
+	font-size: 3em;
 }
 header span{
 	display: block;
