@@ -21,9 +21,6 @@ h2{
 h3{
 	margin-bottom: 2%;
 }
-h4{
-	margin-bottom: 1%;
-}
 .clfx:after {
 	content: "";
 	display: table;
@@ -70,18 +67,24 @@ main{
 .page{
 	padding-top: 14%;
 }
-.page .grid{
-	padding-left: 2%;
-}
-.grid .row > section{
+/*.grid .row > section{
 	float: left;
 	width: 35%;
-}
+}*/
 .grid .row > section > section {
 	padding-left: 2%;
 }
 .row{
 	margin-bottom: 5%;
+}
+.col{
+	display: inline-block;
+	margin-right: 8%;
+	margin: 0 8% 3% auto;
+	vertical-align: top;
+}
+.col:first-of-type{
+	margin-left: 12px;
 }
 nav{
 	text-align: center;
