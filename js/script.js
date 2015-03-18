@@ -1,21 +1,21 @@
 $(document).ready(function(){
 
 	var viewHeight;
+	var colPaddingTop;
 
-	setHeaderHeight(viewHeight);
-
-/*
-	$(window).resize(function(){
-		setHeaderHeight(viewHeight);
-		console.log("window resized");
-	});
-*/
+	setHeaderHeight(viewHeight, colPaddingTop);
 
 	window.addEventListener('resize', setHeaderHeight);
 
-	function setHeaderHeight(height){
+	function setHeaderHeight(height, topPadding){
 		height = $(window).outerHeight();
-		$(".sidebar").height(height);
+		topPadding = $(".sidebar").css("padding-top");
+		parseFloat(topPadding);
+		paddingComp = height - parseFloat(topPadding);
+		$(".sidebar, main").height(height - parseFloat(topPadding));
+		console.log("Window height is " + height);
+		console.log("Sidepar top padding is " + parseFloat(topPadding));
+		console.log("Padding comensation is " + paddingComp);
 	}
 
 	function debounce(func, wait, immediate){
