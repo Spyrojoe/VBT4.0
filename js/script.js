@@ -15,7 +15,7 @@ $(document).ready(function(){
 
 	function setHeaderHeight(height){
 		height = $(window).outerHeight();
-		$("header").height(height);
+		$(".sidebar").height(height);
 	}
 
 	function debounce(func, wait, immediate){

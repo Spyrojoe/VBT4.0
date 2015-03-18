@@ -7,6 +7,9 @@
 ol, ul{
 	list-style: none;
 }
+h1{
+	margin-bottom: 2%;
+}
 .clfx:after {
 	content: "";
 	display: table;
@@ -21,27 +24,47 @@ body{
 	width: 100%;
 	max-width: 960px;
 }
-header,
+.sidebar,
 main{
 	display: block;
-	width: 50%;
 	padding-top: 10%;
 	outline: 1px lightgray dashed;
 }
-header{
+.sidebar{
 	float: left;
+	width: 35%;
 }
 main{
 	float: right;
+	width: 65%;
 }
 .intro,
 nav,
+footer,
 .skills{
 	width: 85%;
 	margin: 0 auto;
 	outline: 2px gray dotted;
 }
 
-.intro{
-	margin-bottom: 6%;
+.intro, nav{
+	margin-bottom: 10%;
+}
+nav{
+	text-align: center;
+}
+nav ul{
+	display: inline-block;
+	margin: 0 auto;
+	text-align: left;
+	outline: 1px gray dotted;
+}
+nav ul li{
+	margin-bottom: 10%;
+	border-bottom: 1px gray solid;
+}
+nav ul li:last-of-type{
+	border-bottom: 0;
+}
+footer{
 }
