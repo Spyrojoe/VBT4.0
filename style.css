@@ -4,6 +4,10 @@
 	padding: 0;
 	border: 0;
 }
+html{
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+}
 ol, ul{
 	list-style: none;
 }
@@ -25,7 +29,7 @@ h4{
 	clear: both;
 }
 body{
-	font-family: "helvetica neue", helvetica, arial, sans-serif;
+	font-family: "open sans", "helvetica neue", helvetica, arial, sans-serif;
 }
 .container{
 	display: block;
@@ -35,7 +39,6 @@ body{
 }
 .sidebar,
 main{
-	outline: 1px lightgray dashed;
 	/*padding-top: 8%;*/
 	padding: 0 3%;
 }
@@ -59,7 +62,9 @@ main{
 	width: 65%;
 }
 .sidebar{
-	background-color: rgba(0,0,0,.2);
+	color: #fff;
+	background: #222;
+	/*background: rgba(0,0,0,.2);*/
 }
 .page{
 	padding-top: 14%;
@@ -94,6 +99,7 @@ nav ul li:last-of-type{
 }
 nav a{
 	text-decoration: none;
+	color: #eee;
 }
 footer p{
 	margin: 4% auto;

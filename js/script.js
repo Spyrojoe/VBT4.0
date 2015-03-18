@@ -7,15 +7,13 @@ $(document).ready(function(){
 
 	window.addEventListener('resize', setHeaderHeight);
 
+	// need to replace with a function finds the tallest column and sets the height of the other equal to it
 	function setHeaderHeight(height, topPadding){
 		height = $(window).outerHeight();
 		topPadding = $(".sidebar").css("padding-top");
 		parseFloat(topPadding);
 		paddingComp = height - parseFloat(topPadding);
 		$(".sidebar, main").height(height - parseFloat(topPadding));
-		console.log("Window height is " + height);
-		console.log("Sidepar top padding is " + parseFloat(topPadding));
-		console.log("Padding comensation is " + paddingComp);
 	}
 
 	function debounce(func, wait, immediate){
