@@ -74,7 +74,7 @@ main{
 	/*background: rgba(0,0,0,.2);*/
 }
 .page{
-	padding-top: 10%;
+	padding-top: 5%;
 }
 /*.grid .row > section{
 	float: left;
@@ -90,6 +90,8 @@ main{
 	display: inline-block;
 	margin: 0 8% 3% 12px;
 	vertical-align: top;
+	width: 100%;
+	max-width: 22%;
 }
 nav{
 	text-align: center;
