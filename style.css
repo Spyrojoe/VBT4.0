@@ -39,16 +39,20 @@ body{
 .sidebar,
 main{
 	/*padding-top: 8%;*/
-	padding: 0 3%;
+	padding: 3%;
 }
 header, nav, footer{
-	/*flex-grow: 1;*/
+	flex-grow: 1;
+}
+header{
+	padding: 5% 0;
 }
 header, nav, footer, .page{
 	width: 100%;
 	margin: 0 auto;
 }
 .vert-wrap{
+	position: fixed;
 	display: flex;
 	flex-direction: column;
 	align-content: flex-start;
@@ -62,6 +66,7 @@ main{
 	background: #fff;
 }
 .sidebar{
+	position: relative;
 	float: left;
 	width: 35%;
 	color: #fff;
