@@ -42,7 +42,10 @@ main{
 	padding: 3%;
 }
 header, nav, footer{
-	/*flex-grow: 1;*/
+	/*display: flex;
+	flex-direction: column;
+	justify-content: center;*/
+	flex-grow: 1;
 	width: 100%;
 	margin: 0 auto;
 }
