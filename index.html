@@ -23,13 +23,13 @@
 			} else {
 				$("#sidebar").outerHeight(col2Height);
 				$("#sidebar").css("position", "relative");
-				$(".vert-wrap").css()
+				$(".vert-wrap").css({
+					"position" : "absolute",
+					"top" : "0",
+					"left" : "0"
+				});
 			}
-			$("#sidebar").outerHeight(viewportHeight);
-
-		});
-		$(window).load(function(){
-			$(".vert-wrap").outerHeight($(window).outerHeight());
+			$("#sidebar, .vert-wrap").outerHeight(viewportHeight);
 		});
 	</script>
 </head>
