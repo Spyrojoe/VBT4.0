@@ -7,37 +7,11 @@
 	<link rel="stylesheet" type="text/css" href="min1200.css">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400|Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<!--<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/findTallest.js"></script>-->
-	<script type="text/javascript">
-		$(document).ready(function(){
-			var col1Height = $(".sidebar").outerHeight();
-			var col2Height = $("#main").outerHeight();
-			var viewportHeight = $(window).outerHeight();
-			console.log("sidebar height = " + col1Height);
-			console.log("main height = " + col2Height);
-			console.log("viewport height = " + viewportHeight)
-
-			if (col2Height < viewportHeight){
-				$("#main").outerHeight(viewportHeight);
-			} else {
-				$("#sidebar").outerHeight(col2Height);
-				$("#sidebar").css("position", "relative");
-				$(".vert-wrap").css({
-					"position" : "absolute",
-					"top" : "0",
-					"left" : "0"
-				});
-			}
-			$("#sidebar, .vert-wrap").outerHeight(viewportHeight);
-		});
-	</script>
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 <div class="clfx">
-	
-	<div class="sidebar clfx" id="sidebar">
-		<div class="vert-wrap clfx">
+	<div class="sidebar">
 		<header>
 			<div class="intro">
 				<p>Hi, I'm</p>
@@ -62,17 +36,16 @@
 				<li>But eventually I'll stop</li>
 			</ul>
 		</footer>
-		</div><!-- vert-wrap --> 
 	</div>
 
-	<main id="main">
+	<main>
 		<section class="page">
 			
 			<div class="grid">
 				<h2>Skills</h2>
 
 				<!-- HTML5 -->
-				<section class="row" id="html5">
+				<section class="row">
 					<h3>HTML5</h3>
 					<div class="col">
 						<h4>Semantics</h4>
@@ -100,7 +73,7 @@
 				</section><!-- row -->
 
 				<!-- CSS3 -->
-				<section class="row" id="css3">
+				<section class="row">
 					<h3>CSS3</h3>	
 					<div class="col">
 						<h4>Animation</h4>
@@ -119,90 +92,7 @@
 				</section><!-- row -->
 
 				<!-- Javascript -->
-				<section class="row" id="javascript">
-					<h3>Javascript</h3>
-					<div class="col">
-						<h4>jQuery</h4>
-						<ul>
-							<li>Blah</li>
-							<li>Blah blah blah</li>
-							<li>Blah blah blah</li>
-						</ul>
-					</div>
-					<div class="col">
-						<h4>AngularJS</h4>
-						<ul>
-							<li>Blah</li>
-							<li>Blah blah blah</li>
-							<li>Blah blah blah</li>
-						</ul>
-					</div>
-					<div class="col">
-						<h4>EmberJS</h4>
-						<ul>
-							<li>Blah</li>
-							<li>Blah blah blah</li>
-							<li>Blah blah blah</li>
-						</ul>
-					</div>
-				</section><!-- row -->
-
-			</div><!-- grid -->
-		</section><!-- page -->
-		<section class="page">
-			
-			<div class="grid">
-				<h2>Skills</h2>
-
-				<!-- HTML5 -->
-				<section class="row" id="html5">
-					<h3>HTML5</h3>
-					<div class="col">
-						<h4>Semantics</h4>
-						<ul>
-							<li>Blah</li>
-							<li>Blah blah blah</li>
-							<li>Blah blah blah</li>
-						</ul>	
-					</div>
-					<div class="col">
-						<h4>Forms</h4>
-						<ul>
-							<li>Blah blah blah</li>
-							<li>Blah blah</li>
-						</ul>
-					</div>
-					<div class="col">
-						<h4>Audio and Video</h4>
-						<ul>
-							<li>Blah</li>
-							<li>Blah blah blah</li>
-							<li>Blah blah blah</li>
-						</ul>	
-					</div>
-				</section><!-- row -->
-
-				<!-- CSS3 -->
-				<section class="row" id="css3">
-					<h3>CSS3</h3>	
-					<div class="col">
-						<h4>Animation</h4>
-						<ul>
-							<li>Blah blah blah</li>
-							<li>Blah blah</li>
-						</ul>
-					</div>
-					<div class="col">
-						<h4>Backgrounds</h4>
-						<ul>
-							<li>Blah blah blah</li>
-							<li>Blah blah</li>
-						</ul>
-					</div>
-				</section><!-- row -->
-
-				<!-- Javascript -->
-				<section class="row" id="javascript">
+				<section class="row">
 					<h3>Javascript</h3>
 					<div class="col">
 						<h4>jQuery</h4>
