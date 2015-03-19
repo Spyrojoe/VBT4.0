@@ -42,15 +42,20 @@ main{
 	padding: 3%;
 }
 header, nav, footer{
-	flex-grow: 1;
+	/*flex-grow: 1;*/
+	width: 100%;
+	margin: 0 auto;
 }
 header{
 	padding: 5% 0;
 }
-header, nav, footer, .page{
-	width: 100%;
-	margin: 0 auto;
+main{
+	float: right;
+	left: 0;
+	width: 65%;
+	background: #fff;
 }
+
 .vert-wrap{
 	position: fixed;
 	display: flex;
@@ -59,14 +64,15 @@ header, nav, footer, .page{
 	justify-content: space-around;
 	
 }
-main{
-	float: right;
-	left: 0;
-	width: 65%;
-	background: #fff;
-}
+
 .sidebar{
-	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
 	float: left;
 	width: 35%;
 	color: #fff;
@@ -74,6 +80,8 @@ main{
 	/*background: rgba(0,0,0,.2);*/
 }
 .page{
+	width: 100%;
+	margin: 0 auto;
 	padding-top: 5%;
 }
 /*.grid .row > section{
