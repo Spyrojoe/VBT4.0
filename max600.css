@@ -1,0 +1,21 @@
+@media screen and (max-width: 600px){
+	.sidebar, main{
+		width: 100%;
+		float: none;
+	}
+	.sidebar{
+		position: static;
+	}
+	nav ul{
+		display: flex;
+		justify-content: space-around;
+	}
+	nav li{
+		width: 24%;
+		border: 0;
+	}
+	nav a{
+		line-height: 3em;
+		background: orange;
+	}
+}
