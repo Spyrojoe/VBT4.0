@@ -46,7 +46,10 @@ header, nav, footer{
 	/*display: flex;
 	flex-direction: column;
 	justify-content: center;*/
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -66,17 +69,37 @@ main{
 
 .vert-wrap{
 	position: fixed;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-content: flex-start;
-	justify-content: space-around;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-align-content: flex-start;
+	    -ms-flex-line-pack: start;
+	        align-content: flex-start;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
 	
 }
 
 .sidebar{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -139,10 +162,11 @@ footer ul{
 }
 .scale{
 	transition: transform .2s;
-	-webkit-transition: transform .2s;
+	-webkit-transition: -webkit-transform .2s;
 }
 .scale:hover{
-	transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	    transform: scale(1.3);
 	-webkit-transform: scale(1.3);
 	/*animation: grow;
 	animation-duration: .6s;
@@ -156,18 +180,22 @@ footer ul{
 
 @keyframes grow {
 	from{
-		transform: scale(1);
+		-webkit-transform: scale(1);
+		        transform: scale(1);
 	}
 	to{
-		transform: scale(1.6);
+		-webkit-transform: scale(1.6);
+		        transform: scale(1.6);
 	}
 }
 @-webkit-keyframes grow {
 	from{
-		transform: scale(1);
+		-webkit-transform: scale(1);
+		        transform: scale(1);
 	}
 	to{
-		transform: scale(1.6);
+		-webkit-transform: scale(1.6);
+		        transform: scale(1.6);
 	}
 }
 
