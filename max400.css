@@ -1,0 +1,35 @@
+@media screen and (max-width: 400px){
+	body{
+		font-size: 1em;
+	}
+	nav li{
+		padding: 0;
+	}
+	nav a{
+		line-height: 2.4em;
+	}
+	.sidebar{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.sidebar footer{
+		display: none;
+	}
+	.row{
+		font-size: 1.1em;
+	}
+	.col{
+		max-width: 49%;
+  		margin: 0 auto 8%;
+	}
+	.intro{
+		text-align: center;
+	}
+	h1{
+		margin: 1% auto;
+		line-height: .9em;
+	}
+	.intro p{
+		font-size: .9em;
+	}
+}
