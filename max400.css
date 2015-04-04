@@ -2,6 +2,22 @@
 	body{
 		font-size: 1em;
 	}
+	h1{
+		margin: 1% auto;
+		line-height: .9em;
+	}
+	header{
+		padding: 2% 1%;
+	}
+	.intro p{
+		font-size: .9em;
+	}
+	.intro p:first-of-type{
+		display: none;
+	}
+	nav ul{
+		width: 100%;
+	}
 	nav li{
 		padding: 0;
 	}
@@ -9,11 +25,17 @@
 		line-height: 2.4em;
 	}
 	.sidebar{
-		padding-top: 0;
-		padding-bottom: 0;
+		max-height: 122px;
+		flex-direction: column-reverse;
+		position: fixed;
+		top: 0;
+		padding: 0;
 	}
 	.sidebar footer{
 		display: none;
+	}
+	main{
+		margin-top: 122px;
 	}
 	.row{
 		font-size: 1.1em;
@@ -21,15 +43,5 @@
 	.col{
 		max-width: 49%;
   		margin: 0 auto 8%;
-	}
-	.intro{
-		text-align: center;
-	}
-	h1{
-		margin: 1% auto;
-		line-height: .9em;
-	}
-	.intro p{
-		font-size: .9em;
 	}
 }
