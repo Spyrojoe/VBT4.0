@@ -11,7 +11,7 @@ html{
 ol, ul{
 	list-style: none;
 }
-h1{
+h1, a{
 	margin-bottom: 2%;
 	color: orange;
 }
@@ -154,11 +154,22 @@ nav a{
 	color: #eee;
 }
 footer{
-	font-size: .85em;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: flex-end;
+	  font-size: .85em;
 }
 footer ul{
-	list-style: disc;
-	padding-left: 46px;
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 3%;
+}
+footer li{
+	display: inline-block;
+	margin-right: 8%;
+}
+footer a{
+	line-height: 100%;
 }
 .scale{
 	transition: transform .2s;
