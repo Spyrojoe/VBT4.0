@@ -161,14 +161,18 @@ footer{
 }
 footer ul{
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	margin-bottom: 3%;
 }
 footer li{
 	display: inline-block;
 	margin-right: 8%;
 }
+footer li:last-of-type{
+	margin-right: 0;
+}
 footer a{
+	text-align: center;
 	line-height: 100%;
 }
 .scale{
