@@ -9,7 +9,7 @@
 <body>
 	
 	<?php include("inc/sidebar.inc.php"); ?>
-	<?php include("inc/skills.inc.php"); ?><!-- replace this with intro.inc -->
+	<?php include("inc/skills.inc.php"); ?>
 
 	
 
