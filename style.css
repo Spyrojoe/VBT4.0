@@ -57,9 +57,11 @@ header{
 	padding: 5% 0;
 }
 main{
-	float: right;
 	left: 0;
-	width: 65%;
+	width: 100%;
+	width: 70%;
+	margin-left: 30%;
+	float: left;
 	background: url(img/absurdidad.png);
 	/*background: url(img/gplay.png);
 	background: url(img/grey.png);
@@ -105,7 +107,8 @@ main{
 	bottom: 0;
 	left: 0;
 	float: left;
-	width: 35%;
+	width: 30%;
+	height: 100vh;
 	color: #fff;
 	/*background: #222;*/
 	background: url(img/footer-lodyas.png);	
