@@ -8,6 +8,9 @@ html{
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 }
+body{
+	background: url(img/absurdidad.png);
+}
 ol, ul{
 	list-style: none;
 }
@@ -57,7 +60,6 @@ main{
 	float: right;
 	left: 0;
 	width: 65%;
-	background: url(img/absurdidad.png);
 	/*background: url(img/gplay.png);
 	background: url(img/grey.png);
 	background: #fff;*/
