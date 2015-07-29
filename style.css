@@ -14,12 +14,14 @@ body{
 ol, ul{
 	list-style: none;
 }
+main li{
+	font-size: .9em;
+}
 h1{
-	margin-bottom: 2%;
 	color: orange;
 }
 h2{
-	margin-bottom: 6%;
+	margin-bottom: 16px;
 	border-bottom: 1px lightgray solid;
 }
 h3{
@@ -94,22 +96,19 @@ main{
 	margin: 0 auto;
 	padding-top: 5%;
 }
-/*.grid .row > section{
-	float: left;
-	width: 35%;
-}*/
+.row{
+	margin: 0 auto 14px 12px;
+}
+section p{
+	margin-bottom: 14px;
+}
 .grid .row > section > section {
 	padding-left: 2%;
 }
-.row{
-	margin-bottom: 5%;
-}
 .col{
-	display: inline-block;
-	margin: 0 8% 3% 12px;
-	vertical-align: top;
+	float: left;
 	width: 100%;
-	max-width: 22%;
+	max-width: 33%;
 }
 nav{
 	text-align: center;
