@@ -14,7 +14,7 @@ body{
 ol, ul{
 	list-style: none;
 }
-main li{
+#main li{
 	font-size: .9em;
 }
 h1{
@@ -43,7 +43,7 @@ body{
 	max-width: 960px;
 }
 .sidebar,
-main{
+#main{
 	/*padding-top: 8%;*/
 	padding: 3%;
 }
@@ -58,25 +58,24 @@ header, nav, footer{
 header{
 	padding: 5% 0;
 }
-main{
+#main{
 	float: right;
-	left: 0;
-	width: 65%;
+	width: 75%;
 	/*background: url(img/gplay.png);
 	background: url(img/grey.png);
 	background: #fff;*/
-
 }
-
+.wrap{
+	width: 100%;
+	margin: 0 auto;
+}
 .vert-wrap{
 	position: fixed;
 	display: flex;
 	flex-direction: column;
 	align-content: flex-start;
 	justify-content: space-around;
-	
 }
-
 .sidebar{
 	display: flex;
 	flex-direction: column;
@@ -86,7 +85,7 @@ main{
 	bottom: 0;
 	left: 0;
 	float: left;
-	width: 35%;
+	width: 25%;
 	color: #fff;
 	/*background: #222;*/
 	background: url(img/footer-lodyas.png);	
@@ -99,6 +98,9 @@ main{
 .row{
 	margin: 0 auto 14px 12px;
 }
+.row.work{
+	margin-bottom: 0;
+}
 section p{
 	margin-bottom: 14px;
 }
@@ -107,8 +109,10 @@ section p{
 }
 .col{
 	float: left;
-	width: 100%;
-	max-width: 33%;
+	width: 33.33%;
+}
+.col.two{
+	width: 50%;
 }
 nav{
 	text-align: center;
@@ -130,6 +134,31 @@ nav a{
 	display: block;
 	text-decoration: none;
 	color: #eee;
+}
+.client{
+	position: relative;
+	padding-top: 14px;
+	background: #3d97de;
+}
+.client:nth-of-type(2){
+	background: #33C1A9;
+}
+.client:nth-of-type(3){
+	/*background: #33C1A9;*/
+	background: #D73B02;
+}
+.client img{
+	display: block;
+	margin: 0 auto 10px;
+	width: 100%;
+	max-width: 120px;
+}
+.blurb{
+	width: 100%;
+	/*background: #3d97de;*/
+	/*position: absolute;
+	bottom: 0;*/
+	text-align: center;
 }
 footer{
 	font-size: .85em;
