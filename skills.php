@@ -14,7 +14,7 @@
 	
 
 	<!-- equal-height columns quick fix -->
-	<script>
+	<!--<script>
 		$(document).ready(function(){
 			var viewportHeight = $(window).outerHeight();
 			var mainHeight = $("#main").outerHeight();
@@ -22,27 +22,7 @@
 				$("#main").height(viewportHeight);
 			}
 		});
-	</script>
+	</script>-->
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
